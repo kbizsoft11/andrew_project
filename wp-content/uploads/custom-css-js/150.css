@@ -1,0 +1,20 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+
+.elementor-element.elementor-element-a765bb8.e-con.e-atomic-element.e-grid-base.e-a765bb8-43e2b54 img {
+    filter: grayscale(100%) !important;
+}
+.elementor-element.elementor-element-46313ec.e-con.e-atomic-element.e-grid-base.e-46313ec-17f3ea6 img {
+    filter: grayscale(100%) !important;
+}</style>
+<!-- end Simple Custom CSS and JS -->

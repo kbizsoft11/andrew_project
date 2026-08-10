@@ -1,0 +1,17 @@
+{
+  "name": "real-testimonial-free-gutenberg-shortcode-block",
+  "version": "2.5.1",
+  "private": true,
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "dependencies": {
+    "@wordpress/block-editor": "^8.2.0",
+    "@wordpress/create-block": "^2.7.0",
+    "@wordpress/escape-html": "^2.2.3"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^28.3.0"
+  }
+}

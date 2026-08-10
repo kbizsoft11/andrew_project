@@ -1,0 +1,150 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.
+
+For example:
+.example {
+    color: red;
+}
+
+For brushing up on your CSS knowledge, check out http://www.w3schools.com/css/css_syntax.asp
+
+End of comment */ 
+
+/* ===========================
+   Andrew Hovelson Contact Form
+=========================== */
+
+.ah-contact-form{
+    max-width:700px;
+    margin:auto;
+    font-family:'Libre Baskerville',serif;
+}
+
+.ah-contact-form .form-title{
+    text-align:center;
+    color:#111111;
+    font-size:32px;
+    letter-spacing:2px;
+    margin-bottom:40px;
+    font-weight:500;
+}
+
+.ah-contact-form .two-col{
+    display:flex;
+    gap:18px;
+}
+
+.ah-contact-form .form-group{
+    width:100%;
+    margin-bottom:18px;
+}
+
+.ah-contact-form input,
+.ah-contact-form select,
+.ah-contact-form textarea{
+    width:100%;
+    height:62px;
+    border:1px solid #d9cdbb;
+    background:#fff;
+    padding:0 22px;
+    font-size:20px;
+    color:#444;
+    font-family:inter;
+    border-radius:0;
+    box-sizing:border-box;
+    outline:none;
+    transition:.3s;
+}
+
+.ah-contact-form textarea{
+    height:150px;
+    padding-top:18px;
+    resize:vertical;
+}
+
+.ah-contact-form input:focus,
+.ah-contact-form textarea:focus,
+.ah-contact-form select:focus{
+    border-color:#c6a15b;
+}
+
+.ah-contact-form input::placeholder,
+.ah-contact-form textarea::placeholder{
+    color:#666;
+}
+
+.ah-contact-form select{
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+
+    background-repeat:no-repeat;
+    background-position:right 22px center;
+    background-size:18px;
+    padding-right:55px;
+}
+
+.ah-contact-form input[type=submit]{
+    width:100%;
+    height:68px;
+    background:#111;
+    color:#ffffff;
+    border:none;
+    font-size:18px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:.35s;
+    font-family:inherit;
+}
+
+.ah-contact-form input[type=submit]:hover{
+    background:#ffffff;
+    color:#111111;
+}
+
+.ah-contact-form .privacy-text{
+    margin-top:22px;
+    text-align:center;
+    color:#666;
+    font-size:17px;
+    font-family:Arial,sans-serif;
+}
+
+.ah-contact-form .wpcf7-not-valid-tip{
+    font-size:13px;
+    margin-top:6px;
+}
+
+.ah-contact-form .wpcf7-spinner{
+    display:block;
+    margin:15px auto 0;
+}
+
+@media(max-width:768px){
+
+    .ah-contact-form .two-col{
+        flex-direction:column;
+        gap:0;
+    }
+
+    .ah-contact-form .form-title{
+        font-size:24px;
+        margin-bottom:30px;
+    }
+
+    .ah-contact-form input,
+    .ah-contact-form select{
+        height:56px;
+        font-size:18px;
+    }
+
+    .ah-contact-form textarea{
+        height:140px;
+    }
+
+}</style>
+<!-- end Simple Custom CSS and JS -->

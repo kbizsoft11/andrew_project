@@ -1,0 +1,37 @@
+<?php
+/**
+ * Slider.
+ *
+ * This template can be overridden by copying it to Your theme/testimonial-free/templates/slider.php
+ *
+ * @package    Testimonial_Free
+ * @subpackage Testimonial_Free/Frontend
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+?>
+<div id="sp-testimonial-free-wrapper-<?php echo esc_attr( $post_id ); ?>" class="sp-testimonial-free-wrapper">
+<?php
+if ( $section_title ) {
+	include self::sp_testimonial_locate_template( 'section-title.php' );
+}
+if ( $preloader ) {
+	include self::sp_testimonial_locate_template( 'preloader.php' );
+}
+?>
+<div id="sp-testimonial-free-<?php echo esc_attr( $post_id ); ?>" class="sp-testimonial-free-section tfree-style-<?php echo esc_attr( $theme_style ); ?>" dir="<?php echo esc_attr( $slider_direction ); ?>" data-preloader="<?php echo esc_attr( $preloader ); ?>" data-swiper='<?php echo esc_attr( $slider_attr ); ?>' <?php echo wp_kses_post( $the_rtl ); ?>>
+<div class="swiper-wrapper">
+<?php echo $testimonial_items['output']; // phpcs:ignore -- Ignored for video, iframe, audio support. ?>
+</div>
+<!-- If we need pagination -->
+<?php if ( $slider_pagination ) : ?>
+<div class="swiper-pagination testimonial-pagination"></div>
+<?php endif;  if ( $show_navigation ) : ?>
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev testimonial-nav-arrow <?php echo esc_attr( $navigation_position ); ?>"><i class="fa fa-angle-left"></i></div>
+<div class="swiper-button-next testimonial-nav-arrow <?php echo esc_attr( $navigation_position ); ?>"><i class="fa fa-angle-right"></i></div>
+<?php endif; ?>
+</div>
+</div>
