@@ -3,8 +3,8 @@
   "version": "2.5.1",
   "private": true,
   "scripts": {
-    "start": "wp-scripts start",
-    "build": "wp-scripts build"
+    "start": "node init && wp-scripts start",
+    "build": "node init && wp-scripts build"
   },
   "dependencies": {
     "@wordpress/block-editor": "^8.2.0",
